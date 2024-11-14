@@ -5,7 +5,7 @@ import Beach from "../../public/beach.svg"
 
 export default function Home() {
   return (
-    <div className="wrap">
+    <div className="wrap bg-gradient-to-b from-sky-100 to-sky-200 ">
       <div className=" relative w-full h-screen flex flex-col items-center justify-center z-10">
         {/*{/* Background hills }
       <div className="absolute bottom-0 w-full h-2/3 bg-gradient-to-t from-orange-300 to-orange-200 rounded-t-full"></div>

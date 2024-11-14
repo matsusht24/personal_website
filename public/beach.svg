@@ -24,12 +24,12 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.97890839"
-     inkscape:cx="529.67163"
-     inkscape:cy="595.05057"
+     inkscape:zoom="0.34609638"
+     inkscape:cx="329.38802"
+     inkscape:cy="585.09713"
      inkscape:window-width="958"
      inkscape:window-height="981"
-     inkscape:window-x="-8"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
@@ -63,18 +63,19 @@
        y1="225.14662"
        x2="143.25055"
        y2="145.9534"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1034826,0,0,1,-11.781452,0)" />
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:url(#linearGradient105);stroke-width:0.265;fill-opacity:1;stroke-dasharray:none"
+       style="fill:url(#linearGradient105);fill-opacity:1;stroke-width:0.278374;stroke-dasharray:none"
        id="rect1"
-       width="192.07529"
+       width="211.95174"
        height="79.314674"
-       x="10.424462"
+       x="-0.27824038"
        y="146.14333" />
     <rect
        style="fill:#000000;stroke-width:0.264583"

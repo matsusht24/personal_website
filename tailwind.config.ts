@@ -14,7 +14,11 @@ export default {
         sun: {
           100: "#FFF5CF",
           200: "#FDD331",
-        }
+        },
+        sky: {
+          100: "#aeeafc ",
+          200: "#5995B7 ",
+        },
       },
     },
   },
