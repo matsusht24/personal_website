@@ -21,7 +21,7 @@ function Button({label}: {label: ButtonProps}) {
     const cur_button = link_dict[label];
   return (
     <div >
-        <Link href={cur_button.link ?? "/"} className="w-40 h-3 flex items-center justify-center rounded-lg shadow-md">
+        <Link href={cur_button.link ?? "/"} className="w-full h-full flex items-center justify-center rounded-lg shadow-md  hover:bg-sky-100">
             <Image width={200} height={100} alt={cur_button.alt} src={cur_button.img} />
         </Link>
     </div>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import NavLinks from "./ui/NavLinks";
 import Button from "./ui/Button";
 import Beach from "../../public/beach.svg"
+import HomeTitle from "../../public/homeTitle.svg"
 
 export default function Home() {
   return (
@@ -33,10 +34,9 @@ export default function Home() {
           <div className="absolute left-1/2 bottom-1/2 w-72 h-72 bg-gradient-to-t from-sun-200 to-sun-100 rounded-full"></div>
         </div>
 
-        <h1 className="relative text-4xl font-bold text-black">
-          Trent Matsushima
+        <h1>
+          <Image alt="Trent Matsushima" src={HomeTitle} height={300} width={900}/>
         </h1>
-
         <div className="relative flex mt-10 space-x-10">
           <Button label="Projects" />
           <Button label="Experiences" />
