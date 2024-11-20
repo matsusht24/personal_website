@@ -10,32 +10,32 @@ export interface expType {
 
 const experience_list: expType[] = [
   {
-    name: "Alluvion Website",
-    img: "/allvion.png",
+    name: "Alluvion, Inc.",
+    img: "/alluvion_logo.png",
     role: 'UI Designer',
   },
   {
     name: "Genki Spark",
-    img: "/genki.png",
+    img: "/genki_spark_logo.jpg",
     role: 'Software Engineer',
   },
   {
-    name: "CakeWorks Website",
-    img: "/cakeworks.png",
+    name: "CakeWorks",
+    img: "/cakeworks_logo.png",
     role: 'UI Designer',
   },
   {
-    name: 'eWorld Enterprise Solutions',
-    img: '/eworld.png',
+    name: 'eWorldES',
+    img: '/eworldES_logo.jpg',
     role: 'Software Developer Intern',
   },
 
 ]
 function page() {
   return (
-    <div className='wrapper'>
+    <div className=''>
       <NavBar/>
-      <div className='timeline'>
+      <div className='flex flex-row-reverse justify-between'>
       {
         experience_list.map((cur_exp) => (
           <ExpCard key={cur_exp.name} exp={cur_exp}/>

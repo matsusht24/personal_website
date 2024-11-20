@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Roboto } from 'next/font/google'
+import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import Image from "next/image";
+import Beach from "../../public/beach.svg";
 
 const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['300', '700', '900'],
+  subsets: ["latin"],
+  weight: ["300", "700", "900"],
 });
-
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -32,10 +33,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${roboto.className} antialiased`}
-      >
-        {children}
+      <body className={`${roboto.className} antialiased`}>
+        <div className="relative min-h-screen bg-gradient-to-b from-sky-100 to-sky-200 p-4">
+          <div className="w-screen h-2/3 ">
+            <Image alt="beach" src={Beach} layout="fill" objectFit="cover" />
+          </div>
+          <div className="relative z-10">{children}</div>
+        </div>
       </body>
     </html>
   );

@@ -6,7 +6,7 @@ import HomeTitle from "../../public/homeTitle.svg"
 
 export default function Home() {
   return (
-    <div className="wrap bg-gradient-to-b from-sky-100 to-sky-200 ">
+    <div className="wrap">
       <div className=" relative w-full h-screen flex flex-col items-center justify-center z-10">
         {/*{/* Background hills }
       <div className="absolute bottom-0 w-full h-2/3 bg-gradient-to-t from-orange-300 to-orange-200 rounded-t-full"></div>
@@ -46,9 +46,7 @@ export default function Home() {
           <NavLinks />
         </div>
       </div>
-      <div className="w-screen h-2/3 ">
-        <Image alt="beach" src={Beach} layout="fill" objectFit="cover" />
-      </div>
+      
       
     </div>
   );
