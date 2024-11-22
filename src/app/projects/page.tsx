@@ -15,7 +15,7 @@ export interface projectType {
 const project_list:projectType[]= [
   {
     name: "Hearthstone Battleground Helper",
-    img: "/heartstone.png",
+    img: "/hearthstone.png",
     category: 'Full-Stack',
     skills: ['React', 'Flask', 'Web Scrapping'],
   },
@@ -30,7 +30,7 @@ const project_list:projectType[]= [
     name: "Malawi Gradebook", 
     img: '/malawi.png',
     category: 'Full Stack',
-    skills: ["LAMP stack", "UI Design"],
+    skills: ["LAMP stack", "UI Design"],  
 
   },
   {
@@ -47,9 +47,19 @@ const project_list:projectType[]= [
 function page() {
   return (
     <div className="wrapper">
-     <div className=''>
+      <strong></strong>
+     <div className='header'>
       <NavBar/>
-      <div className='flex flex-row-reverse justify-between'>
+      <div className="flex flex-row justify-center ">
+        <div className="flex-col text-center">
+        <strong className=" text-3xl ">Project</strong>
+        <p>Independent or class related experiences </p>
+        </div>
+        
+      </div>
+      
+
+      <div className='flex justify-between p-10 pl-48 pr-48'>
       {
         project_list.map((cur_exp) => (
           <ProjCard key={cur_exp.name} project={cur_exp}/>
