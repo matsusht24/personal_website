@@ -59,7 +59,7 @@ function page() {
       </div>
       
 
-      <div className='flex justify-between p-10 pl-48 pr-48'>
+      <div className='grid grid-cols-4 justify-between p-10 pl-48 pr-48'>
       {
         project_list.map((cur_exp) => (
           <ProjCard key={cur_exp.name} project={cur_exp}/>
