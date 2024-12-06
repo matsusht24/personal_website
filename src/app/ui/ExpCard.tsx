@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { expType } from "../experiences/page";
+import "./animations/ExpandCardAnimation.css"
 type cardPropTypes = {
   exp: expType;
   onSelect: (exp: expType) => void;

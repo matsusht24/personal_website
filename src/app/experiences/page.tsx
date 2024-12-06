@@ -4,6 +4,7 @@ import NavBar from "../ui/NavBar";
 import ExpCard from "../ui/ExpCard";
 import ExpandedCard from "../ui/ExpandedCard";
 import { baseType } from "../page";
+import "./animations/ExpandedCardAnimation.css"
 
 export interface expType extends baseType {
   date: string;
@@ -113,6 +114,8 @@ const experience_list: expType[] = [
     location: "Honolulu, HI",
   },
 ];
+
+
 function page() {
   const [is_expanded, setExpanded] = useState(false);
   const [selected, setSelected] = useState(experience_list[0]);

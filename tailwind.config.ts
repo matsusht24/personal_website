@@ -20,7 +20,14 @@ export default {
           200: "#5995B7 ",
         },
       },
+      keyframes: {
+        expand: {
+          '0%': {transform: 'scale(1);', opacity: '1'},
+          '100%': {transform: 'scale(5)', opacity: '0'},
+        }
+      }
     },
   },
   plugins: [],
+  
 } satisfies Config;

@@ -1,0 +1,52 @@
+/* ExpandedCardAnimation.css */
+.card {
+    width: 150px;
+    height: 200px;
+    background-color: #3a3a3a;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .card .card-content {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card.expanded {
+    width: 300px;  /* Expands the card width */
+    height: 400px; /* Expands the card height */
+  }
+  
+  .destination {
+    display: none;
+  }
+  
+  .destination.show {
+    display: block;
+    animation: expandCardToDestination 0.5s forwards;
+  }
+  
+  .expanded-card {
+    width: 300px;
+    height: 400px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  @keyframes expandCardToDestination {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
