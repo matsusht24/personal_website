@@ -4,6 +4,14 @@ import Button from "./ui/Button";
 import Beach from "../../public/beach.svg"
 import HomeTitle from "../../public/homeTitle.svg"
 
+export interface baseType {
+  name: string,
+  skills: string[],
+  img: string,
+  description: string;
+  contributions: string[];
+}
+
 export default function Home() {
   return (
     <div className="wrap">

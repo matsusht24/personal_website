@@ -2,14 +2,11 @@ import Link from 'next/link'
 import React from 'react'
 import NavBar from '../ui/NavBar'
 import ProjCard from '../ui/ProjCard'
+import { baseType } from '../page';
 
-export interface projectType {
-  name: string, 
-  category: string, 
-  skills: string[],
-  img: string,
-
-  
+export interface projectType extends baseType {
+ 
+    category: string,
 };
 
 const project_list:projectType[]= [
@@ -33,13 +30,7 @@ const project_list:projectType[]= [
     skills: ["LAMP stack", "UI Design"],  
 
   },
-  {
-    name: "Song Recommeder",
-    img: '/song.png',
-    category: 'Machine Learning',
-    skills: ['Python', "Music21"],
-    
-  }
+
   
 ];
 
@@ -59,7 +50,7 @@ function page() {
       </div>
       
 
-      <div className='grid grid-cols-4 justify-between p-10 pl-48 pr-48'>
+      <div className='flex justify-between p-10 ml-40 mr-40'>
       {
         project_list.map((cur_exp) => (
           <ProjCard key={cur_exp.name} project={cur_exp}/>
