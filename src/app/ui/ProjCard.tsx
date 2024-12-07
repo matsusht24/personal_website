@@ -1,7 +1,5 @@
 import React from "react";
 import { projectType } from "../projects/page";
-import { HiArrowTopRightOnSquare } from "react-icons/hi2";
-import Link from "next/link";
 import Image from "next/image";
 
 type cardPropTypes = {

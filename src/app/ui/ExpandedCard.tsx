@@ -1,7 +1,6 @@
 import React from "react";
 import { expType } from "../experiences/page";
 import Image from "next/image";
-import Button from "./Button";
 import { projectType } from "../projects/page";
 type projectOrExpType = projectType | expType;
 
@@ -31,18 +30,18 @@ function ExpandedCard({ exp, close }: cardPropTypes) {
           </div>
 
           <div className="flex flex-col ml-6">
-            {!isProject && <strong>{exp.role}</strong>}
+            {"role" in exp && <strong>{exp.role}</strong>}
             <div className="flex flex-row mb-1">
               <strong>{exp.name}</strong>
 
               {!isProject && (
                 <>
                   <div className="h-full border-l-2 border-gray-500 ml-2 mr-2" />{" "}
-                  <p>{exp.location}</p>
+                  <p>{"location" in exp && exp.location}</p>
                 </>
               )}
             </div>
-            {!isProject && <p>{exp.date}</p>}
+            {"date" in exp && <p>{exp.date}</p>}
 
             {
               <div className="flex justify-start">
@@ -75,7 +74,7 @@ function ExpandedCard({ exp, close }: cardPropTypes) {
               <>
               <strong>Outcomes:</strong>
             <ul className="list-disc list-inside ml-3">
-              {exp.outcomes.map((outcome) => (
+              {"outcomes" in exp && exp.outcomes.map((outcome) => (
                 <li key={outcome} className="text-wrap">
                   {outcome}
                 </li>

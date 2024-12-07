@@ -1,10 +1,8 @@
 "use client";
-import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "../ui/NavBar";
 import ProjCard from "../ui/ProjCard";
 import { baseType } from "../page";
-import { useState } from "react";
 import ExpandedCard from "../ui/ExpandedCard";
 
 export interface projectType extends baseType {

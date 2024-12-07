@@ -36,7 +36,8 @@ const experience_list: expType[] = [
     logo: "/alluvion_logo.png",
     role: "Web Developer",
     location: "Remote",
-    img:""
+    img:"",
+
   },
   {
     name: "Genki Spark",

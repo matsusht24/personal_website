@@ -1,7 +1,6 @@
 import Image from "next/image";
 import NavLinks from "./ui/NavLinks";
 import Button from "./ui/Button";
-import Beach from "../../public/beach.svg"
 import HomeTitle from "../../public/homeTitle.svg"
 
 export interface baseType {

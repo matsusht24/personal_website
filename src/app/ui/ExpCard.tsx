@@ -6,15 +6,9 @@ type cardPropTypes = {
   onSelect: (exp: expType) => void;
 };
 function ExpCard({ exp, onSelect }: cardPropTypes) {
-  const [expanded, setExpanded] = useState(false)
-  const handleClick = (exp: expType) => {
-    setExpanded(true);
-
-    onSelect(exp);
-    
-  }
+  
   return (
-    <div role="button" className="flex flex-col hover:drop-shadow-lg" onClick={()=> handleClick(exp)}>
+    <div role="button" className="flex flex-col hover:drop-shadow-lg" onClick={()=> onSelect(exp)}>
       <div className="w-full flex row justify-center mb-4" >
         <div className=" w-20 h-20 shadow-lg rounded-full ">
           <Image
