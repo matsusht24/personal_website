@@ -25,6 +25,9 @@ export default {
           '0%': {transform: 'scale(1);', opacity: '1'},
           '100%': {transform: 'scale(5)', opacity: '0'},
         }
+      },
+      animation: {
+        expand: 'expand 1s ease-in-out'
       }
     },
   },

@@ -4,7 +4,10 @@ import NavBar from "../ui/NavBar";
 import ExpCard from "../ui/ExpCard";
 import ExpandedCard from "../ui/ExpandedCard";
 import { baseType } from "../page";
-import "./animations/ExpandedCardAnimation.css"
+
+// function delay(ms: number): Promise<void> {
+//   return new Promise((resolve) => setTimeout(resolve, ms));
+// }
 
 export interface expType extends baseType {
   date: string;
@@ -30,9 +33,10 @@ const experience_list: expType[] = [
       "Leveraged responsive design principles to ensure usability across devices.",
     ],
 
-    img: "/alluvion_logo.png",
+    logo: "/alluvion_logo.png",
     role: "Web Developer",
     location: "Remote",
+    img:""
   },
   {
     name: "Genki Spark",
@@ -55,9 +59,10 @@ const experience_list: expType[] = [
       "Built a React-based dashboard to present patient data and predictions, improving doctors' ability to make informed decisions.",
       "Conducted 25+ user interviews to refine test features and dashboard layout, ensuring a seamless UX/UI design",
     ],
-    img: "/genki_spark_logo.jpg",
+    logo: "/genki_spark_logo.jpg",
     role: "Software Engineer",
     location: "Portland, OR",
+    img: "",
   },
   {
     name: "CakeWorks",
@@ -82,9 +87,10 @@ const experience_list: expType[] = [
       "Fixed 40+ bugs and errors from the previous website, enhancing overall functionality and performance.",
 
     ],
-    img: "/cakeworks_logo.png",
+    logo: "/cakeworks_logo.png",
     role: "UI Designer",
     location: "Honolulu, HI",
+    img: "",
   },
   {
     name: "eWorld Enterprise Solutions",
@@ -109,24 +115,25 @@ const experience_list: expType[] = [
       "Cleaned and updated OCR data, collaborating with an international team to ensure accuracy.",
       "Streamlined the file organization process using the Dropbox API, creating an automated workflow for over 1,000+ blueprints.",
     ],
-    img: "/eworldES_logo.jpg",
+    logo: "/eworldES_logo.jpg",
     role: "Software Developer Intern",
     location: "Honolulu, HI",
+    img: "",
   },
 ];
 
 
 function page() {
-  const [is_expanded, setExpanded] = useState(false);
+  const [is_expanded, setIsExpanded] = useState(false);
   const [selected, setSelected] = useState(experience_list[0]);
 
   const handleClick = (exp: expType) => {
-    setExpanded(true);
+    setIsExpanded(true);
     setSelected(exp);
   };
 
   const handleClose = () => {
-    setExpanded(false);
+    setIsExpanded(false);
   };
 
   return (

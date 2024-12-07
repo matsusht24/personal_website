@@ -10,6 +10,7 @@ export interface baseType {
   img: string,
   description: string;
   contributions: string[];
+  logo: string,
 }
 
 export default function Home() {

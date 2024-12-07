@@ -3,14 +3,15 @@ import { expType } from "../experiences/page";
 import Image from "next/image";
 import Button from "./Button";
 import { projectType } from "../projects/page";
-type projectOrExp = projectType | expType;
+type projectOrExpType = projectType | expType;
 
 type cardPropTypes = {
-  exp: expType;
+  exp: projectOrExpType;
   close: () => void;
 };
 
 function ExpandedCard({ exp, close }: cardPropTypes) {
+  const isProject: boolean = "category" in exp;
   return (
     <div className="relative w-full h-full border-dotted border-black border-2 bg-opacity-5 bg-black">
       <button onClick={close} className="absolute right-2 ">
@@ -21,7 +22,7 @@ function ExpandedCard({ exp, close }: cardPropTypes) {
         <div className="flex  flex-row ">
           <div className=" w-20 h-20 shadow-lg rounded-full">
             <Image
-              src={exp.img}
+              src={exp.logo}
               alt={exp.name}
               width={100}
               height={100}
@@ -30,13 +31,18 @@ function ExpandedCard({ exp, close }: cardPropTypes) {
           </div>
 
           <div className="flex flex-col ml-6">
-            <strong>{exp.role}</strong>
+            {!isProject && <strong>{exp.role}</strong>}
             <div className="flex flex-row mb-1">
               <strong>{exp.name}</strong>
-              <div className="h-full border-l-2 border-gray-500 ml-2 mr-2" />
-              <p>{exp.location}</p>
+
+              {!isProject && (
+                <>
+                  <div className="h-full border-l-2 border-gray-500 ml-2 mr-2" />{" "}
+                  <p>{exp.location}</p>
+                </>
+              )}
             </div>
-            <p>{exp.date}</p>
+            {!isProject && <p>{exp.date}</p>}
 
             {
               <div className="flex justify-start">
@@ -49,7 +55,9 @@ function ExpandedCard({ exp, close }: cardPropTypes) {
                   </p>
                 ))}
               </div>
+              
             }
+            {isProject && <p>{exp.description}</p>}
           </div>
         </div>
 
@@ -63,7 +71,18 @@ function ExpandedCard({ exp, close }: cardPropTypes) {
                 </li>
               ))}
             </ul>
-            <p>{exp.description}</p>
+            {isProject ? (
+              <>
+              <strong>Outcomes:</strong>
+            <ul className="list-disc list-inside ml-3">
+              {exp.outcomes.map((outcome) => (
+                <li key={outcome} className="text-wrap">
+                  {outcome}
+                </li>
+              ))}
+            </ul>
+            </>
+            ): <p>{exp.description}</p>}
           </div>
         </div>
       </div>
