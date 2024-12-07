@@ -1,6 +1,5 @@
-import React, { useState } from "react";
 import Image from "next/image";
-import { expType } from "../experiences/page";
+import { expType } from "../experiences/Page";
 type cardPropTypes = {
   exp: expType;
   onSelect: (exp: expType) => void;

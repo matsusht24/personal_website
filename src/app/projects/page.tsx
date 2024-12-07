@@ -70,7 +70,7 @@ const project_list: projectType[] = [
   },
 ];
 
-function page() {
+function Page() {
   const [is_expanded, setIsExpanded] = useState(false);
   const [selected, setSelected] = useState(project_list[0]);
 
@@ -113,4 +113,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

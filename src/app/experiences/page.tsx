@@ -10,6 +10,7 @@ import { baseType } from "../page";
 // }
 
 export interface expType extends baseType {
+
   date: string;
   role: string;
   location: string;
@@ -124,7 +125,7 @@ const experience_list: expType[] = [
 ];
 
 
-function page() {
+function Page() {
   const [is_expanded, setIsExpanded] = useState(false);
   const [selected, setSelected] = useState(experience_list[0]);
 
@@ -162,4 +163,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
