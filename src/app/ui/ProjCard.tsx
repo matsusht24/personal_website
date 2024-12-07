@@ -1,5 +1,5 @@
 import React from "react";
-import { projectType } from "../projects/Page";
+import { projectType } from "@/app/projects/page";
 import Image from "next/image";
 
 type cardPropTypes = {

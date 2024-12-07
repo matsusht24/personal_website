@@ -1,7 +1,7 @@
 import React from "react";
-import { expType } from "../experiences/Page";
+import { expType } from "@/app/experiences/page";
 import Image from "next/image";
-import { projectType } from "../projects/Page";
+import { projectType } from  "@/app/projects/page";
 type projectOrExpType = projectType | expType;
 
 type cardPropTypes = {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { expType } from "../experiences/Page";
+import { expType } from "@/app/experiences/page";
 type cardPropTypes = {
   exp: expType;
   onSelect: (exp: expType) => void;
