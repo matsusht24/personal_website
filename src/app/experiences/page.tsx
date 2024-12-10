@@ -4,7 +4,6 @@ import NavBar from "../ui/NavBar";
 import ExpCard from "../ui/ExpCard";
 import ExpandedCard from "../ui/ExpandedCard";
 import { baseType} from "../page";
-import { assetPrefix } from "../../../next.config";
 
 // function delay(ms: number): Promise<void> {
 //   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -35,7 +34,7 @@ const experience_list: expType[] = [
       "Leveraged responsive design principles to ensure usability across devices.",
     ],
 
-    logo: `${assetPrefix}/alluvion_logo.png`,
+    logo: `/personal_website/alluvion_logo.png`,
     role: "Web Developer",
     location: "Remote",
     img:"",
@@ -62,7 +61,7 @@ const experience_list: expType[] = [
       "Built a React-based dashboard to present patient data and predictions, improving doctors' ability to make informed decisions.",
       "Conducted 25+ user interviews to refine test features and dashboard layout, ensuring a seamless UX/UI design",
     ],
-    logo: `${assetPrefix}/genki_spark_logo.jpg`,
+    logo: `/personal_website/genki_spark_logo.jpg`,
     role: "Software Engineer",
     location: "Portland, OR",
     img: "",
@@ -90,7 +89,7 @@ const experience_list: expType[] = [
       "Fixed 40+ bugs and errors from the previous website, enhancing overall functionality and performance.",
 
     ],
-    logo: `${assetPrefix}/cakeworks_logo.png`,
+    logo: `/personal_website/cakeworks_logo.png`,
     role: "UI Designer",
     location: "Honolulu, HI",
     img: "",
@@ -118,7 +117,7 @@ const experience_list: expType[] = [
       "Cleaned and updated OCR data, collaborating with an international team to ensure accuracy.",
       "Streamlined the file organization process using the Dropbox API, creating an automated workflow for over 1,000+ blueprints.",
     ],
-    logo: `${assetPrefix}/eworldES_logo.jpg`,
+    logo: `/personal_website/eworldES_logo.jpg`,
     role: "Software Developer Intern",
     location: "Honolulu, HI",
     img: "",

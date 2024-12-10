@@ -4,7 +4,6 @@ import NavBar from "../ui/NavBar";
 import ProjCard from "../ui/ProjCard";
 import { baseType} from "../page";
 import ExpandedCard from "../ui/ExpandedCard";
-import { assetPrefix } from "../../../next.config";
 
 export interface projectType extends baseType {
   category: string;
@@ -14,8 +13,8 @@ export interface projectType extends baseType {
 const project_list: projectType[] = [
   {
     name: "Hearthstone Battleground Helper",
-    img: `${assetPrefix}/hearthstone.png`,
-    logo: `${assetPrefix}/hearthstone.png`,
+    img: `/personal_website/hearthstone.png`,
+    logo: `/personal_website/hearthstone.png`,
     category: "Full-Stack",
     skills: ["React", "Flask", "Web Scrapping"],
     contributions: [
@@ -33,8 +32,8 @@ const project_list: projectType[] = [
   },
   {
     name: "Formula SAE",
-    img: `${assetPrefix}/formula.png`,
-    logo: `${assetPrefix}/formula.png`,
+    img: `/personal_website/formula.png`,
+    logo: `/personal_website/formula.png`,
     category: "Firmware",
     skills: ["Data Analysis", "C", "Sensor Design"],
     contributions: [
@@ -52,8 +51,8 @@ const project_list: projectType[] = [
   },
   {
     name: "Malawi Gradebook",
-    img: `${assetPrefix}/malawi.png`,
-    logo: `${assetPrefix}/malawi.png`,
+    img: `/personal_website/malawi.png`,
+    logo: `/personal_website/malawi.png`,
     category: "Full Stack",
     skills: ["LAMP stack", "UI Design"],
     contributions: [

@@ -2,7 +2,7 @@ import Image from "next/image";
 import NavLinks from "./ui/NavLinks";
 import Button from "./ui/Button";
 import HomeTitle from "../../public/homeTitle.svg";
-import { assetPrefix } from "../../next.config";
+
 
 export interface baseType {
   name: string,
@@ -35,7 +35,7 @@ export default function Home() {
         <div className="relative">
           <Image
             className="relative z-10"
-            src={`${assetPrefix}/Selfie_nobg_v1.png`}
+            src={`/personal_website/Selfie_nobg_v1.png`}
             alt="Trent's Picture"
             width={441}
             height={443}
