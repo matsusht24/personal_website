@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const assetPrefix = "/personal_website";
 
 export {assetPrefix}
 const nextConfig: NextConfig = {
