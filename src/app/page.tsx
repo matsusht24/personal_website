@@ -2,9 +2,7 @@ import Image from "next/image";
 import NavLinks from "./ui/NavLinks";
 import Button from "./ui/Button";
 import HomeTitle from "../../public/homeTitle.svg";
-const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
-export {assetPrefix}
+import { assetPrefix } from "../../next.config";
 
 export interface baseType {
   name: string,

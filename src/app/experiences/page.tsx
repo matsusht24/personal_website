@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import NavBar from "../ui/NavBar";
 import ExpCard from "../ui/ExpCard";
 import ExpandedCard from "../ui/ExpandedCard";
-import { baseType, assetPrefix } from "../page";
+import { baseType} from "../page";
+import { assetPrefix } from "../../../next.config";
 
 // function delay(ms: number): Promise<void> {
 //   return new Promise((resolve) => setTimeout(resolve, ms));

@@ -2,8 +2,9 @@
 import React, { useState } from "react";
 import NavBar from "../ui/NavBar";
 import ProjCard from "../ui/ProjCard";
-import { baseType, assetPrefix } from "../page";
+import { baseType} from "../page";
 import ExpandedCard from "../ui/ExpandedCard";
+import { assetPrefix } from "../../../next.config";
 
 export interface projectType extends baseType {
   category: string;
